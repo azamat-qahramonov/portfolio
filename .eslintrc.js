@@ -1,6 +1,3 @@
 module.exports = {
-    rules: {
-      'react/no-unescaped-entities': 'off',
-    },
-  }
-  
+  extends: ["next/core-web-vitals"],
+};
