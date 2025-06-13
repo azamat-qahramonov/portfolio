@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script type="application/ld+json" />
+        {/* Google tag (gtag.js) */}
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-${process.env.NEXT_PRIVATE_GTID}`}
+          src="https://www.googletagmanager.com/gtag/js?id=G-5CF4KWRVD6"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -31,8 +31,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-
-              gtag('config', 'G-${process.env.NEXT_PRIVATE_GTID}');
+              gtag('config', 'G-5CF4KWRVD6');
             `,
           }}
         />
